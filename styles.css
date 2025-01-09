@@ -1,0 +1,162 @@
+/* 共用樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden; /* 防止水平滾動 */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 統一主內容區域配置 */
+main {
+    width: 100%;
+    max-width: 900px; /* 確保最大寬度 */
+    margin: 40px auto; /* 自動居中，並確保間距 */
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* 標題與段落樣式 */
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 表單樣式 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+form input, form textarea {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px; /* 限制最大寬度 */
+    margin: 0 auto;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 240px;
+    margin: 0 auto;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #555;
+    transform: scale(0.95); /* 鼠標懸停時縮小 */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* 圖片大小調整 */
+img {
+    width: 50%;   /* 圖片寬度自適應容器 */
+    height: auto;  /* 高度自動調整 */
+    max-width: 50%; /* 確保圖片不會超過容器的寬度 */
+    border-radius: 8px; /* 圓角效果 */
+    margin-bottom: 20px; /* 圖片與下方元素的間距 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* 調整標題字體大小 */
+    }
+
+    nav a {
+        font-size: 1rem; /* 調整導航文字大小 */
+        margin: 0 10px; /* 縮小導航按鈕之間的間距 */
+    }
+
+    main {
+        padding: 20px; /* 減少主內容區的內邊距 */
+        margin: 20px auto; /* 減少主內容區的外邊距 */
+    }
+
+    form input, form textarea, form button {
+        width: 100%; /* 使表單元素在小螢幕上填滿寬度 */
+    }
+}
+
+/* Footer 樣式 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* 音樂播放器按鈕 */
+#music-player {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#music-player:hover {
+    background-color: #444;
+    transform: scale(0.9); /* 鼠標懸停時縮小 */
+}
+
+
+
